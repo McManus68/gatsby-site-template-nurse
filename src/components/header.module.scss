@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container {
+  flex: 1;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 400;
+  margin: 0 0.5rem;
+}
+
+nav {
+  flex: 2;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: #5f5f79;
+  font-size: 1rem;
+}
+
+.cart {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+  display: flex;
+}

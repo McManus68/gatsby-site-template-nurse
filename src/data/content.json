@@ -1,0 +1,21 @@
+{
+  "slug": "site",
+  "title": "Site modèle",
+  "description": "Site de présentation pour un infirmier libéral",
+  "owner": "Emmanuel Tarrou",
+  "creationDate": "2019-11-19",
+  "pages": [
+    {
+      "title": "Nos soins",
+      "slug": "blog"
+    },
+    {
+      "title": "A propos",
+      "slug": "about"
+    },
+    {
+      "title": "Contact",
+      "slug": "contact"
+    }
+  ]
+}
