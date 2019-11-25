@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import HeaderItem from './header-item'
 import style from './header.module.scss'
 
 import { FaCoins, FaShoppingCart } from 'react-icons/fa'
@@ -14,11 +14,7 @@ const Header = props => {
       <nav>
         <ul className={style.navLinks}>
           {props.items.map(({ slug, title }) => (
-            <li>
-              <Link className={style.navLink} to={slug}>
-                {title}
-              </Link>
-            </li>
+            <HeaderItem slug={slug} title={title} />
           ))}
         </ul>
       </nav>

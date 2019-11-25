@@ -11,6 +11,15 @@ module.exports.onCreateNode = ({ node, actions }) => {
       value: slug,
     })
   }
+
+  if (node.internal.type === 'DataJson') {
+    console.group('json node')
+    createNodeField({
+      node,
+      name: 'testttt',
+      value: 'test',
+    })
+  }
 }
 
 module.exports.createPages = async ({ graphql, actions }) => {
@@ -65,4 +74,19 @@ module.exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+}
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type SiteContent implements Node @dontInfer {
+      id: Integer!
+      slug: String!
+      title: String!
+      description: String!
+      owner: String!
+      creationDate: Date
+    }
+  `
+  createTypes(typeDefs)
 }

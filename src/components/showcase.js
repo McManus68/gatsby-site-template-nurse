@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './showcase.module.scss'
-import deviceImg from '../images/m.png'
 import leftArrow from '../images/arrow-left.svg'
 import rightArrow from '../images/arrow-right.svg'
 import dot from '../images/dot.svg'
@@ -8,6 +7,7 @@ import dotFull from '../images/dot-full.svg'
 
 const ShowCase = props => {
   console.log('showCase ', props)
+  console.log('../images/', props.data.dataJson.image)
   return (
     <div>
       <section className={style.presentation}>
@@ -22,7 +22,7 @@ const ShowCase = props => {
           </div>
         </div>
         <div className={style.cover}>
-          <img src={deviceImg} alt="" />
+          <img src={`../images/${props.data.dataJson.image}`} alt="" />
         </div>
       </section>
 

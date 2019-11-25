@@ -13,6 +13,7 @@ export const query = graphql`
       description
       owner
       creationDate
+      image
       pres1
       pres2
       legalNotice
