@@ -1,6 +1,8 @@
 import React from 'react'
 import Footer from '../components/footer'
 import Header from '../components/header'
+import Background from '../components/background'
+
 import '../styles/index.scss'
 import layoutStyles from './layout.module.scss'
 
@@ -10,7 +12,8 @@ const Layout = props => {
     <div className={layoutStyles.container}>
       <Header items={props.data.pages} />
       <div className={layoutStyles.content}>{props.children}</div>
-      <Footer />
+      <Footer data={props.data} />
+      <Background />
     </div>
   )
 }

@@ -8,8 +8,14 @@ import styles from './index.module.scss'
 
 export const query = graphql`
   query {
-    dataJson {
+    dataJson(id: { eq: "1" }) {
       title
+      description
+      owner
+      creationDate
+      pres1
+      pres2
+      legalNotice
       pages {
         title
         slug
@@ -29,7 +35,7 @@ const IndexPage = props => {
   return (
     <Layout data={props.data.dataJson}>
       <Head title={props.data.dataJson.title} />
-      <ShowCase img={props.data.file.childImageSharp.fluid} />
+      <ShowCase data={props.data} />
     </Layout>
   )
 }
