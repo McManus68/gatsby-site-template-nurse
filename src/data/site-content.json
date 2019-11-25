@@ -1,9 +1,11 @@
 {
   "slug": "site",
-  "title": "Site modèle",
+  "title": "Site modèle d'infirmier libéral",
   "description": "Site de présentation pour un infirmier libéral",
   "owner": "Emmanuel Tarrou",
   "creationDate": "2019-11-19",
+  "image": "m.png",
+  "legalNotice": "Toute reproduction partielle ou complète est proscrite.",
   "pages": [
     {
       "title": "Nos soins",

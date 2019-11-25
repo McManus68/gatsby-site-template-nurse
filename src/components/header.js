@@ -1,25 +1,10 @@
-import React, { useState } from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import React from 'react'
+import { Link } from 'gatsby'
 import style from './header.module.scss'
 
 import { FaCoins, FaShoppingCart } from 'react-icons/fa'
 
-const Header = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      dataJson {
-        title
-        pages {
-          title
-          slug
-        }
-      }
-    }
-  `)
-
-  const [navOpen, setNavOpen] = useState(0)
-  const [hoverIndex, setHoverIndex] = useState(-1)
-
+const Header = props => {
   return (
     <header>
       <div className={style.logoContainer}>
@@ -28,7 +13,7 @@ const Header = () => {
       </div>
       <nav>
         <ul className={style.navLinks}>
-          {data.dataJson.pages.map(({ slug, title }) => (
+          {props.items.map(({ slug, title }) => (
             <li>
               <Link className={style.navLink} to={slug}>
                 {title}

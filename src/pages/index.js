@@ -8,6 +8,13 @@ import styles from './index.module.scss'
 
 export const query = graphql`
   query {
+    dataJson {
+      title
+      pages {
+        title
+        slug
+      }
+    }
     file(relativePath: { eq: "images/m.png" }) {
       childImageSharp {
         fluid(maxWidth: 400, maxHeight: 250) {
@@ -20,8 +27,8 @@ export const query = graphql`
 const IndexPage = props => {
   console.log(props)
   return (
-    <Layout>
-      <Head title="Home" />
+    <Layout data={props.data.dataJson}>
+      <Head title={props.data.dataJson.title} />
       <ShowCase img={props.data.file.childImageSharp.fluid} />
     </Layout>
   )
