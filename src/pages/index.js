@@ -1,10 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
 import Layout from '../components/layout'
 import Head from '../components/head'
 import ShowCase from '../components/showcase'
-import styles from './index.module.scss'
 
 export const query = graphql`
   query {

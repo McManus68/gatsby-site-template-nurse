@@ -1,13 +1,11 @@
 import React from 'react'
 import style from './showcase.module.scss'
-import leftArrow from '../images/arrow-left.svg'
-import rightArrow from '../images/arrow-right.svg'
-import dot from '../images/dot.svg'
-import dotFull from '../images/dot-full.svg'
+import leftArrow from '../assets/images/arrow-left.svg'
+import rightArrow from '../assets/images/arrow-right.svg'
+import dot from '../assets/images/dot.svg'
+import dotFull from '../assets/images/dot-full.svg'
 
 const ShowCase = props => {
-  console.log('showCase ', props)
-  console.log('../images/', props.data.dataJson.image)
   return (
     <div>
       <section className={style.presentation}>

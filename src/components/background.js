@@ -1,8 +1,8 @@
 import React from 'react'
 
-import bigCircle from '../images/big-eclipse.svg'
-import mediumCircle from '../images/mid-eclipse.svg'
-import smallCircle from '../images/small-eclipse.svg'
+import bigCircle from '../assets/images/big-eclipse.svg'
+import mediumCircle from '../assets/images/mid-eclipse.svg'
+import smallCircle from '../assets/images/small-eclipse.svg'
 import style from './background.module.scss'
 
 const Background = () => {

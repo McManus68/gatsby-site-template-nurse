@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/data`,
+        path: `${__dirname}/src/assets/data`,
       },
     },
     'gatsby-plugin-sass',
@@ -48,7 +48,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
         name: 'images',
       },
     },
