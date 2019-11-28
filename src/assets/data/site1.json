@@ -5,14 +5,14 @@
   "description": "Site de présentation pour un infirmier libéral",
   "owner": "Emmanuel Tarrou",
   "creationDate": "2019-11-19",
-  "image": "m1.png",
+  "image": "nurse1.jpg",
   "pres1": "Robert Durand, Infirmier libéral à domicile sur le secteur de Montpellier",
   "pres2": "16 années d'expérience dans le domaine soin aux personnes",
   "legalNotice": "Toute reproduction partielle ou complète est proscrite.",
   "pages": [
     {
       "title": "Nos soins",
-      "slug": "blog"
+      "slug": ""
     },
     {
       "title": "A propos",
@@ -21,6 +21,38 @@
     {
       "title": "Contact",
       "slug": "contact"
+    }
+  ],
+  "cares": [
+    {
+      "title": "Piqure a domicile",
+      "icon": "syringe",
+      "description": "Vaccinations et piqures a domiciles"
+    },
+    {
+      "title": "Pansements et bandages",
+      "icon": "band-aid",
+      "description": "Je penserqi vos plaies avec douceur et volupté"
+    },
+    {
+      "title": "Ordonances",
+      "icon": "capsules",
+      "description": "Je vais te faire bouffer tes pilules jusqu'a en vomir"
+    },
+    {
+      "title": "Livraison de weed",
+      "icon": "cannabis",
+      "description": "Cannabis thérapeutique mon gros! Passe le oinj"
+    },
+    {
+      "title": "Soins généralistes",
+      "icon": "heart",
+      "description": "Soins courants à domicile"
+    },
+    {
+      "title": "Surveillance",
+      "icon": "procedures",
+      "description": "Garderie de nuit, je serai ton garde du corps baby"
     }
   ]
 }

@@ -1,9 +1,5 @@
 import React from 'react'
 import style from './showcase.module.scss'
-import leftArrow from '../assets/images/arrow-left.svg'
-import rightArrow from '../assets/images/arrow-right.svg'
-import dot from '../assets/images/dot.svg'
-import dotFull from '../assets/images/dot-full.svg'
 
 const ShowCase = props => {
   return (
@@ -23,14 +19,6 @@ const ShowCase = props => {
           <img src={`../images/${props.data.dataJson.image}`} alt="" />
         </div>
       </section>
-
-      <div className={style.laptopSelect}>
-        <img src={leftArrow} alt="" />
-        <img src={dot} alt="" />
-        <img src={dotFull} alt="" />
-        <img src={dotFull} alt="" />
-        <img src={rightArrow} alt="" />
-      </div>
     </div>
   )
 }

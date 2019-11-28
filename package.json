@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-   "clean": "gatsby clean",
+    "clean": "gatsby clean",
     "build": "gatsby build",
     "develop": "env-cmd gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
@@ -15,6 +15,9 @@
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^13.4.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
     "font-awesome": "^4.7.0",
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.33",

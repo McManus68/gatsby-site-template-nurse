@@ -1,0 +1,12 @@
+@import '../styles/_variables';
+
+.title {
+  text-align: center;
+
+  h2 {
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid $primary-color;
+    display: inline-block;
+  }
+}

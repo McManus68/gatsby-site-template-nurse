@@ -5,14 +5,14 @@
   "description": "Site de présentation pour un infirmier libéral",
   "owner": "Emmanuel Tarrou",
   "creationDate": "2019-11-19",
-  "image": "m2.png",
+  "image": "nurse2.jpg",
   "pres1": "Maurice Chevalier infirmier libéral a domicile dans le 15ème arrondissement de Paris",
   "pres2": "Les piqures les plus douce de toute la ville! Vous ne sentirez rien.",
   "legalNotice": "Toute reproduction partielle ou complète est proscrite.",
   "pages": [
     {
       "title": "Les pratiques",
-      "slug": "blog"
+      "slug": ""
     },
     {
       "title": "Le Cabinet",
@@ -21,6 +21,28 @@
     {
       "title": "Rendez-vous",
       "slug": "contact"
+    }
+  ],
+  "cares": [
+    {
+      "title": "Oscultations",
+      "icon": "stethoscope",
+      "description": "Suivi infirmier quotidien à domicile"
+    },
+    {
+      "title": "Diagnostic",
+      "icon": "file-medical-alt",
+      "description": "Diagnostic médical et suivi des patients"
+    },
+    {
+      "title": "Soins courants",
+      "icon": "user-nurse",
+      "description": "Soins courants et journaliers"
+    },
+    {
+      "title": "Prescriptions",
+      "icon": "prescription-bottle",
+      "description": "Suivi des prescriptions médicales avec votre médecin traitant"
     }
   ]
 }

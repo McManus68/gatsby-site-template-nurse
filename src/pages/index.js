@@ -2,29 +2,18 @@ import React from 'react'
 import Layout from '../components/layout'
 import Head from '../components/head'
 import ShowCase from '../components/showcase'
+import Cares from '../components/cares'
+import Contact from '../components/contact'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fas)
 
 export const query = graphql`
   query {
     dataJson(id: { eq: "1" }) {
-      title
-      description
-      owner
-      creationDate
-      image
-      pres1
-      pres2
-      legalNotice
-      pages {
-        title
-        slug
-      }
-    }
-    file(relativePath: { eq: "images/m.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 400, maxHeight: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+      ...siteFields
     }
   }
 `
@@ -34,6 +23,8 @@ const IndexPage = props => {
     <Layout data={props.data.dataJson}>
       <Head title={props.data.dataJson.title} />
       <ShowCase data={props.data} />
+      <Cares data={props.data.dataJson} />
+      <Contact />
     </Layout>
   )
 }
