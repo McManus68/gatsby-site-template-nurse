@@ -1,3 +1,5 @@
+@import '../styles/_variables';
+
 header {
   display: flex;
   width: 90%;
@@ -7,31 +9,33 @@ header {
 }
 
 .logo-container {
-  flex: 1;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-}
 
-.logo {
-  font-weight: 400;
-  margin: 0 0.5rem;
+  svg {
+    font-size: 3rem;
+    color: $primary-color;
+  }
 }
 
 nav {
-  flex: 2;
+  flex: 1;
 }
 
-.nav-links {
-  justify-content: space-around;
+.nav-container {
+  display: flex;
+  justify-content: center;
   list-style: none;
 }
 
-.cart {
-  flex: 1;
-  justify-content: flex-end;
-}
-
-.logo-container,
-.nav-links,
-.cart {
+.phone-container {
+  font-size: 0.8rem;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  h4 {
+    margin-left: 0.5rem;
+  }
 }

@@ -5,10 +5,10 @@ import Title from './title'
 const Contact = props => {
   return (
     <section className={style.container}>
+      <Title title="Contact" />
       <div className={style.contact}>
         <div className={style.imageContainer}></div>
         <div className={style.formContainer}>
-          <Title title="Contact" />
           <input
             type="text"
             className={style.field}

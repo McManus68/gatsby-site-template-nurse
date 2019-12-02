@@ -3,7 +3,6 @@ import style from './care.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Care = props => {
-  console.log('care ', props)
   return (
     <div className={style.card}>
       <div className={style.icon}>

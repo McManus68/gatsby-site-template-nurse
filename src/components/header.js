@@ -1,25 +1,24 @@
 import React from 'react'
 import HeaderItem from './header-item'
 import style from './header.module.scss'
-
-import { FaCoins, FaShoppingCart } from 'react-icons/fa'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Header = props => {
   return (
     <header>
       <div className={style.logoContainer}>
-        <FaCoins />
-        <h4 className={style.logo}> Three dot</h4>
+        <FontAwesomeIcon icon="user-md" />
       </div>
       <nav>
-        <ul className={style.navLinks}>
+        <ul className={style.navContainer}>
           {props.items.map(({ slug, title }) => (
             <HeaderItem slug={slug} title={title} />
           ))}
         </ul>
       </nav>
-      <div className={style.cart}>
-        <FaShoppingCart />
+      <div className={style.phoneContainer}>
+        <FontAwesomeIcon icon="phone" />
+        <h4>06.21.28.12.18</h4>
       </div>
     </header>
   )

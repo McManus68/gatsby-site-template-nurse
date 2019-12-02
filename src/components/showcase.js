@@ -7,8 +7,8 @@ const ShowCase = props => {
       <section className={style.presentation}>
         <div className={style.introduction}>
           <div className={style.introText}>
-            <h1>{props.data.dataJson.pres1} </h1>
-            <p>{props.data.dataJson.pres2}</p>
+            <h1>{props.data.pres1} </h1>
+            <p>{props.data.pres2}</p>
           </div>
           <div className={style.cta}>
             <button className={style.ctaSelect}>Horaires</button>
@@ -16,7 +16,7 @@ const ShowCase = props => {
           </div>
         </div>
         <div className={style.cover}>
-          <img src={`../images/${props.data.dataJson.image}`} alt="" />
+          <img src={`../images/${props.data.image}`} alt="" />
         </div>
       </section>
     </div>
